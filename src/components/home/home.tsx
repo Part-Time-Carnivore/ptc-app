@@ -5,7 +5,7 @@ import { Component } from "@stencil/core";
   styleUrl: "home.css",
   shadow: true
 })
-export class AppHome {
+export class PTCHome {
   render() {
     return (
       <div class="ptc-home">

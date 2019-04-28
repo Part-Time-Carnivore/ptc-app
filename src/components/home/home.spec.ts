@@ -1,7 +1,7 @@
-import { AppHome } from "./home";
+import { PTCHome } from "./home";
 
 describe("app", () => {
   it("builds", () => {
-    expect(new AppHome()).toBeTruthy();
+    expect(new PTCHome()).toBeTruthy();
   });
 });

@@ -6,7 +6,7 @@ import { MatchResults } from "@stencil/router";
   styleUrl: "profile.css",
   shadow: true
 })
-export class AppProfile {
+export class PTCProfile {
   @Prop() match: MatchResults;
 
   normalize(name: string): string {

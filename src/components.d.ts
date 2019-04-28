@@ -19,6 +19,9 @@ export namespace Components {
   interface PtcHome {}
   interface PtcHomeAttributes extends StencilHTMLAttributes {}
 
+  interface PtcLogo {}
+  interface PtcLogoAttributes extends StencilHTMLAttributes {}
+
   interface PtcProfile {
     'match': MatchResults;
   }
@@ -33,12 +36,14 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'PtcHome': Components.PtcHome;
+    'PtcLogo': Components.PtcLogo;
     'PtcProfile': Components.PtcProfile;
     'PtcRoot': Components.PtcRoot;
   }
 
   interface StencilIntrinsicElements {
     'ptc-home': Components.PtcHomeAttributes;
+    'ptc-logo': Components.PtcLogoAttributes;
     'ptc-profile': Components.PtcProfileAttributes;
     'ptc-root': Components.PtcRootAttributes;
   }
@@ -48,6 +53,12 @@ declare global {
   var HTMLPtcHomeElement: {
     prototype: HTMLPtcHomeElement;
     new (): HTMLPtcHomeElement;
+  };
+
+  interface HTMLPtcLogoElement extends Components.PtcLogo, HTMLStencilElement {}
+  var HTMLPtcLogoElement: {
+    prototype: HTMLPtcLogoElement;
+    new (): HTMLPtcLogoElement;
   };
 
   interface HTMLPtcProfileElement extends Components.PtcProfile, HTMLStencilElement {}
@@ -64,12 +75,14 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'ptc-home': HTMLPtcHomeElement
+    'ptc-logo': HTMLPtcLogoElement
     'ptc-profile': HTMLPtcProfileElement
     'ptc-root': HTMLPtcRootElement
   }
 
   interface ElementTagNameMap {
     'ptc-home': HTMLPtcHomeElement;
+    'ptc-logo': HTMLPtcLogoElement;
     'ptc-profile': HTMLPtcProfileElement;
     'ptc-root': HTMLPtcRootElement;
   }

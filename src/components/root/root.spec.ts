@@ -1,7 +1,7 @@
-import { AppRoot } from "./root";
+import { PTCRoot } from "./root";
 
 describe("ptc-root", () => {
   it("builds", () => {
-    expect(new AppRoot()).toBeTruthy();
+    expect(new PTCRoot()).toBeTruthy();
   });
 });
