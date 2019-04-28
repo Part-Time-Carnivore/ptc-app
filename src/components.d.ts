@@ -16,62 +16,62 @@ import {
 
 export namespace Components {
 
-  interface AppHome {}
-  interface AppHomeAttributes extends StencilHTMLAttributes {}
+  interface PtcHome {}
+  interface PtcHomeAttributes extends StencilHTMLAttributes {}
 
-  interface AppProfile {
+  interface PtcProfile {
     'match': MatchResults;
   }
-  interface AppProfileAttributes extends StencilHTMLAttributes {
+  interface PtcProfileAttributes extends StencilHTMLAttributes {
     'match'?: MatchResults;
   }
 
-  interface AppRoot {}
-  interface AppRootAttributes extends StencilHTMLAttributes {}
+  interface PtcRoot {}
+  interface PtcRootAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
-    'AppHome': Components.AppHome;
-    'AppProfile': Components.AppProfile;
-    'AppRoot': Components.AppRoot;
+    'PtcHome': Components.PtcHome;
+    'PtcProfile': Components.PtcProfile;
+    'PtcRoot': Components.PtcRoot;
   }
 
   interface StencilIntrinsicElements {
-    'app-home': Components.AppHomeAttributes;
-    'app-profile': Components.AppProfileAttributes;
-    'app-root': Components.AppRootAttributes;
+    'ptc-home': Components.PtcHomeAttributes;
+    'ptc-profile': Components.PtcProfileAttributes;
+    'ptc-root': Components.PtcRootAttributes;
   }
 
 
-  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  interface HTMLPtcHomeElement extends Components.PtcHome, HTMLStencilElement {}
+  var HTMLPtcHomeElement: {
+    prototype: HTMLPtcHomeElement;
+    new (): HTMLPtcHomeElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  interface HTMLPtcProfileElement extends Components.PtcProfile, HTMLStencilElement {}
+  var HTMLPtcProfileElement: {
+    prototype: HTMLPtcProfileElement;
+    new (): HTMLPtcProfileElement;
   };
 
-  interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
-  var HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  interface HTMLPtcRootElement extends Components.PtcRoot, HTMLStencilElement {}
+  var HTMLPtcRootElement: {
+    prototype: HTMLPtcRootElement;
+    new (): HTMLPtcRootElement;
   };
 
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement
-    'app-profile': HTMLAppProfileElement
-    'app-root': HTMLAppRootElement
+    'ptc-home': HTMLPtcHomeElement
+    'ptc-profile': HTMLPtcProfileElement
+    'ptc-root': HTMLPtcRootElement
   }
 
   interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
-    'app-root': HTMLAppRootElement;
+    'ptc-home': HTMLPtcHomeElement;
+    'ptc-profile': HTMLPtcProfileElement;
+    'ptc-root': HTMLPtcRootElement;
   }
 
 

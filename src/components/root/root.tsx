@@ -1,13 +1,11 @@
-import { Component } from '@stencil/core';
-
+import { Component } from "@stencil/core";
 
 @Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.css',
+  tag: "ptc-root",
+  styleUrl: "root.css",
   shadow: true
 })
 export class AppRoot {
-
   render() {
     return (
       <div>
@@ -18,8 +16,8 @@ export class AppRoot {
         <main>
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url='/' component='app-home' exact={true} />
-              <stencil-route url='/profile/:name' component='app-profile' />
+              <stencil-route url="/" component="ptc-home" exact={true} />
+              <stencil-route url="/profile/:name" component="ptc-profile" />
             </stencil-route-switch>
           </stencil-router>
         </main>
