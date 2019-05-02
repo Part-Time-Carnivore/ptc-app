@@ -10,7 +10,7 @@ export class PTCRoot {
     return [
       <header>
         <ptc-logo>Part-Time Carnivore</ptc-logo>
-        <h2>is hibernating</h2>
+        <h2>has gone into hibernation</h2>
       </header>,
       <main>
         <stencil-router>

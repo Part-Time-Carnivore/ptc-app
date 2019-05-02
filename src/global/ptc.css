@@ -19,11 +19,19 @@ html {
   --font-heading: Helsinki, "Arial Black", "Arial Bold", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-dark: #353959;
+  --color-light: #e2e0d2;
+  --color-primary: #bf3f4f;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 body {
   font-family: var(--font-body);
   font-weight: 300;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  text-align: center;
+  letter-spacing: 0.08em;
 }
 
 h1,

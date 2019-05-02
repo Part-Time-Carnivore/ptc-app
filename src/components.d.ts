@@ -8,7 +8,6 @@
 import '@stencil/core';
 
 import '@stencil/router';
-import '@stencil/state-tunnel';
 import {
   MatchResults,
 } from '@stencil/router';
@@ -16,11 +15,14 @@ import {
 
 export namespace Components {
 
-  interface PtcHome {}
-  interface PtcHomeAttributes extends StencilHTMLAttributes {}
-
   interface PtcLogo {}
   interface PtcLogoAttributes extends StencilHTMLAttributes {}
+
+  interface PtcSubscribeForm {}
+  interface PtcSubscribeFormAttributes extends StencilHTMLAttributes {}
+
+  interface PtcHome {}
+  interface PtcHomeAttributes extends StencilHTMLAttributes {}
 
   interface PtcProfile {
     'match': MatchResults;
@@ -35,30 +37,38 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'PtcHome': Components.PtcHome;
     'PtcLogo': Components.PtcLogo;
+    'PtcSubscribeForm': Components.PtcSubscribeForm;
+    'PtcHome': Components.PtcHome;
     'PtcProfile': Components.PtcProfile;
     'PtcRoot': Components.PtcRoot;
   }
 
   interface StencilIntrinsicElements {
-    'ptc-home': Components.PtcHomeAttributes;
     'ptc-logo': Components.PtcLogoAttributes;
+    'ptc-subscribe-form': Components.PtcSubscribeFormAttributes;
+    'ptc-home': Components.PtcHomeAttributes;
     'ptc-profile': Components.PtcProfileAttributes;
     'ptc-root': Components.PtcRootAttributes;
   }
 
 
-  interface HTMLPtcHomeElement extends Components.PtcHome, HTMLStencilElement {}
-  var HTMLPtcHomeElement: {
-    prototype: HTMLPtcHomeElement;
-    new (): HTMLPtcHomeElement;
-  };
-
   interface HTMLPtcLogoElement extends Components.PtcLogo, HTMLStencilElement {}
   var HTMLPtcLogoElement: {
     prototype: HTMLPtcLogoElement;
     new (): HTMLPtcLogoElement;
+  };
+
+  interface HTMLPtcSubscribeFormElement extends Components.PtcSubscribeForm, HTMLStencilElement {}
+  var HTMLPtcSubscribeFormElement: {
+    prototype: HTMLPtcSubscribeFormElement;
+    new (): HTMLPtcSubscribeFormElement;
+  };
+
+  interface HTMLPtcHomeElement extends Components.PtcHome, HTMLStencilElement {}
+  var HTMLPtcHomeElement: {
+    prototype: HTMLPtcHomeElement;
+    new (): HTMLPtcHomeElement;
   };
 
   interface HTMLPtcProfileElement extends Components.PtcProfile, HTMLStencilElement {}
@@ -74,15 +84,17 @@ declare global {
   };
 
   interface HTMLElementTagNameMap {
-    'ptc-home': HTMLPtcHomeElement
     'ptc-logo': HTMLPtcLogoElement
+    'ptc-subscribe-form': HTMLPtcSubscribeFormElement
+    'ptc-home': HTMLPtcHomeElement
     'ptc-profile': HTMLPtcProfileElement
     'ptc-root': HTMLPtcRootElement
   }
 
   interface ElementTagNameMap {
-    'ptc-home': HTMLPtcHomeElement;
     'ptc-logo': HTMLPtcLogoElement;
+    'ptc-subscribe-form': HTMLPtcSubscribeFormElement;
+    'ptc-home': HTMLPtcHomeElement;
     'ptc-profile': HTMLPtcProfileElement;
     'ptc-root': HTMLPtcRootElement;
   }

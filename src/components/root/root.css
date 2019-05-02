@@ -1,10 +1,13 @@
 header {
+  padding: 1rem;
   text-align: center;
   background: #e2e0d2;
   color: #353959;
   font-family: var(--font-heading);
+  box-shadow: var(--box-shadow);
 }
 
 h2 {
-  margin-top: 0.5rem;
+  font-size: 1.3em;
+  margin: 0.5rem 0 0;
 }
