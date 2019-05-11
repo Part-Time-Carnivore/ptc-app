@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Helsinki";
+  src: url("/assets/font/helsinki-webfont.woff") format("woff");
+}
+
+html {
+  --font-heading: Helsinki, "Arial Black", "Arial Bold", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-dark: #353959;
+  --color-light: #e2e0d2;
+  --color-primary: #bf3f4f;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+}
+
+h1 {
+  display: block;
+  height: 30vh;
+  max-height: 15rem;
+  max-width: 90%;
+  margin: 0 auto;
+  background: url(assets/media/logo.svg) no-repeat center bottom;
+  background-size: contain;
+  text-indent: -9999px;
+}
+
+header {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 50vh;
+  padding: 1rem;
+  text-align: center;
+  background: #e2e0d2;
+  color: #353959;
+  font-family: var(--font-heading);
+  box-shadow: var(--box-shadow);
+}
+
+.header-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin: 0.5rem 0 0;
+}
+
+label {
+  font-family: var(--font-heading);
+  display: block;
+  margin: 1rem;
+}
+
+form {
+  display: block;
+  max-width: 18rem;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+}
+
+input {
+  display: block;
+  width: calc(100% - 2rem);
+  font-size: 1em;
+  border: none;
+  padding: 1rem;
+  background: var(--color-light);
+  color: var(--color-dark);
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  outline: 0;
+}
+
+button {
+  display: block;
+  width: calc(100%);
+  margin: 1rem 0;
+  background: var(--color-primary);
+  color: var(--color-light);
+  font-family: var(--font-heading);
+  font-size: 1em;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+  outline: 0;
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+  transform: translateY(1px);
+  color: white;
+}
