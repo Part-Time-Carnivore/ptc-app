@@ -1,8 +1,10 @@
 :host {
   display: block;
-  height: 6rem;
-  margin-bottom: 0;
-  background: url(assets/media/logo.svg) no-repeat center;
+  height: 30vh;
+  max-height: 15rem;
+  max-width: 90%;
+  margin: 0 auto;
+  background: url(assets/media/logo.svg) no-repeat center bottom;
   background-size: contain;
   text-indent: -9999px;
 }

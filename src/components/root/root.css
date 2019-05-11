@@ -1,10 +1,20 @@
 header {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 50vh;
   padding: 1rem;
   text-align: center;
   background: #e2e0d2;
   color: #353959;
   font-family: var(--font-heading);
   box-shadow: var(--box-shadow);
+}
+
+.header-content {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
 }
 
 h2 {

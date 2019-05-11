@@ -6,11 +6,7 @@ import { Component } from "@stencil/core";
 export class PTCHome {
   render() {
     return (
-      <div class="ptc-home">
-        <p>Bear with us. Part-Time Carnivore will be back, better than ever.</p>
-
-        <ptc-subscribe-form />
-      </div>
+      <p>Bear with us. Part-Time Carnivore will be back, better than ever.</p>
     );
   }
 }

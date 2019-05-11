@@ -9,8 +9,10 @@ export class PTCRoot {
   render() {
     return [
       <header>
-        <ptc-logo>Part-Time Carnivore</ptc-logo>
-        <h2>has gone into hibernation</h2>
+        <div class="header-content">
+          <ptc-logo>Part-Time Carnivore</ptc-logo>
+          <h2>has gone into hibernation</h2>
+        </div>
       </header>,
       <main>
         <stencil-router>

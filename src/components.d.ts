@@ -18,9 +18,6 @@ export namespace Components {
   interface PtcLogo {}
   interface PtcLogoAttributes extends StencilHTMLAttributes {}
 
-  interface PtcSubscribeForm {}
-  interface PtcSubscribeFormAttributes extends StencilHTMLAttributes {}
-
   interface PtcHome {}
   interface PtcHomeAttributes extends StencilHTMLAttributes {}
 
@@ -38,7 +35,6 @@ export namespace Components {
 declare global {
   interface StencilElementInterfaces {
     'PtcLogo': Components.PtcLogo;
-    'PtcSubscribeForm': Components.PtcSubscribeForm;
     'PtcHome': Components.PtcHome;
     'PtcProfile': Components.PtcProfile;
     'PtcRoot': Components.PtcRoot;
@@ -46,7 +42,6 @@ declare global {
 
   interface StencilIntrinsicElements {
     'ptc-logo': Components.PtcLogoAttributes;
-    'ptc-subscribe-form': Components.PtcSubscribeFormAttributes;
     'ptc-home': Components.PtcHomeAttributes;
     'ptc-profile': Components.PtcProfileAttributes;
     'ptc-root': Components.PtcRootAttributes;
@@ -57,12 +52,6 @@ declare global {
   var HTMLPtcLogoElement: {
     prototype: HTMLPtcLogoElement;
     new (): HTMLPtcLogoElement;
-  };
-
-  interface HTMLPtcSubscribeFormElement extends Components.PtcSubscribeForm, HTMLStencilElement {}
-  var HTMLPtcSubscribeFormElement: {
-    prototype: HTMLPtcSubscribeFormElement;
-    new (): HTMLPtcSubscribeFormElement;
   };
 
   interface HTMLPtcHomeElement extends Components.PtcHome, HTMLStencilElement {}
@@ -85,7 +74,6 @@ declare global {
 
   interface HTMLElementTagNameMap {
     'ptc-logo': HTMLPtcLogoElement
-    'ptc-subscribe-form': HTMLPtcSubscribeFormElement
     'ptc-home': HTMLPtcHomeElement
     'ptc-profile': HTMLPtcProfileElement
     'ptc-root': HTMLPtcRootElement
@@ -93,7 +81,6 @@ declare global {
 
   interface ElementTagNameMap {
     'ptc-logo': HTMLPtcLogoElement;
-    'ptc-subscribe-form': HTMLPtcSubscribeFormElement;
     'ptc-home': HTMLPtcHomeElement;
     'ptc-profile': HTMLPtcProfileElement;
     'ptc-root': HTMLPtcRootElement;
