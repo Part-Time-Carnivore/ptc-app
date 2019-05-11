@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "ptc-holding"
+    "default": "ptc-holding",
+    "app": "part-time-carnivore"
   }
 }

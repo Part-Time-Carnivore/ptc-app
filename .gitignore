@@ -11,6 +11,8 @@ log.txt
 *.sublime-workspace
 
 .firebase/
+.firebase/hosting.d3d3.cache
+
 .stencil/
 .idea/
 .vscode/
